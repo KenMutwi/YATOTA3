@@ -1,12 +1,18 @@
-package com.ken.yatota;
+package com.ken.yatota.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.ken.yatota.Models.InputmodelClass;
+import com.ken.yatota.R;
+import com.ken.yatota.Utils.ApiClient;
+import com.ken.yatota.Interfaces.ApiInterface;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,6 +37,13 @@ public class Livestatus extends AppCompatActivity {
         btnDelete1=(Button) findViewById(R.id.btnDelete);
 
         uploadData1();
+        btnViewData1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Livestatus.this, ShopData.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

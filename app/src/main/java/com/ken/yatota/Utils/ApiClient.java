@@ -1,4 +1,4 @@
-package com.ken.yatota;
+package com.ken.yatota.Utils;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

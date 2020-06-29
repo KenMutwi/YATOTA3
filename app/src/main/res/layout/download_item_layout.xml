@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/idNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="2dp"
+        android:text="10"
+        android:paddingStart="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/totalN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="100"
+        android:paddingStart="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="11/06/2020"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/totalN"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/chair1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="10"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/date1"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+    <TextView
+        android:id="@+id/chair2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/chair1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/chair3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chair2"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/blackline"
+        app:layout_constraintBottom_toBottomOf="@+id/idNumber"
+        android:layout_marginBottom="-25dp"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

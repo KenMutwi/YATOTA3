@@ -1,4 +1,4 @@
-package com.ken.yatota;
+package com.ken.yatota.Models;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -1,4 +1,4 @@
-package com.ken.yatota;
+package com.ken.yatota.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.ken.yatota.R;
 
 public class MainActivity extends AppCompatActivity {
     private TextView liveshops,manager,products,analysis;
@@ -23,28 +25,28 @@ public class MainActivity extends AppCompatActivity {
         liveshops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,Livestatus.class);
+                Intent intent= new Intent(MainActivity.this, Livestatus.class);
                 startActivity(intent);
             }
         });
         manager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,ManagerPortal.class);
+                Intent intent= new Intent(MainActivity.this, ManagerPortal.class);
                 startActivity(intent);
             }
         });
         products.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,Products.class);
+                Intent intent= new Intent(MainActivity.this, Products.class);
                 startActivity(intent);
             }
         });
         analysis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,Analysis.class);
+                Intent intent= new Intent(MainActivity.this, Analysis.class);
                 startActivity(intent);
             }
         });
